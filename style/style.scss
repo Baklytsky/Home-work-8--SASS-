@@ -1,8 +1,40 @@
 @import "mixins";
 @import "variables";
 #header {
-  .navbar-toggler-icon {
-    background-color: $color;
+  padding-top: 2%;
+  .icon-three-bars {
+    color: $color;
+    font-size: $size-menu;
+    }
+  }
+#header {
+  ul {
+    li {
+      margin-right: 10px;
+
+      a {
+        @include menu-item;
+        color: $color;
+
+        &:hover {
+          background-color: $yellow;
+        }
+      }
+    }
   }
 }
+
+  #home {
+    #page1 {
+      background-color: $yellow;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #header {
+    }
+      ul a {
+        padding: 30px 9px;
+      }
+    }
 

@@ -1,4 +1,24 @@
-#header .navbar-toggler-icon {
-  background-color: #CCC; }
+#header {
+  padding-top: 2%; }
+  #header .icon-three-bars {
+    color: #424146;
+    font-size: 2em; }
+
+#header ul li {
+  margin-right: 10px; }
+  #header ul li a {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #424146; }
+    #header ul li a:hover {
+      background-color: #FFEA00; }
+
+#home #page1 {
+  background-color: #FFEA00; }
+
+@media (min-width: 768px) {
+  ul a {
+    padding: 30px 9px; } }
 
 /*# sourceMappingURL=style.css.map */
