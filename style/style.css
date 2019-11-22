@@ -47,6 +47,66 @@
     color: #FFEA00;
     background-color: #424146; }
 
+#development {
+  padding: 5% 0 5%; }
+  #development h2 {
+    font-size: 1em;
+    color: #424146;
+    line-height: 0.6; }
+  #development .dev-title {
+    font-size: 1em;
+    color: #424146;
+    padding-top: 20px; }
+
+.layer-one {
+  width: 100%;
+  height: 100%;
+  background-color: #FFEA00;
+  padding: 50px 50px 10px;
+  position: relative; }
+  .layer-one .icon-dev {
+    font-size: 4em; }
+  .layer-one .icon-title {
+    padding-top: 30px; }
+
+.layer-two {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 1s ease-out;
+  opacity: 0; }
+
+.card .body-bg {
+  background-color: #424146; }
+.card .layer-one-text {
+  position: relative; }
+.card .layer-two-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 1s ease-out;
+  opacity: 0; }
+  .card .layer-two-text .card-link {
+    font-size: 0.7em;
+    color: #FFEA00; }
+  .card .layer-two-text:before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #424146; }
+
+.card:hover .layer-two {
+  opacity: 1; }
+.card:hover .layer-two-text {
+  opacity: 1; }
+
 @media (min-width: 425px) {
   .section-slider h2 span {
     font-size: 1.1em; }

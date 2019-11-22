@@ -23,3 +23,16 @@
   padding: 5px 10px;
   margin-bottom: 30px;
 }
+@mixin dev-headline {
+  font-size: 1em;
+  color: $color;
+  line-height: 0.6;
+}
+@mixin dev-title {
+  font-size: 1em;
+  color: $color;
+  padding-top: 20px;
+}
+@mixin icon-dev {
+  font-size: 4em;
+}
