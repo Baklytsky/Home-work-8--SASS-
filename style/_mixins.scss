@@ -1,16 +1,16 @@
 @mixin menu-item {
   font-weight: 400;
-  font-size: 1em;
+  font-size: $small;
   text-transform: uppercase;
 }
 @mixin slider-headline {
-  font-size: 0.7em;
+  font-size: $smaller;
   font-weight: 500;
   color: $color;
   background-color: $yellow;
 }
 @mixin slider-title {
-  font-size: 0.8em;
+  font-size: $smaller;
   font-weight: 500;
   color: $white;
   background-color: $color;
@@ -18,22 +18,28 @@
 @mixin btn {
   width: 80%;
   color: $white;
-  background-color: #000;
+  background-color: $black;
   border-bottom: 2px solid $yellow;
   padding: 5px 10px;
   margin-bottom: 30px;
 }
 @mixin dev-headline {
-  font-size: 1em;
+  font-size: $small;
   font-weight: 600;
   color: $color;
   line-height: 0.6;
 }
 @mixin dev-title {
-  font-size: 1em;
+  font-size: $small;
   color: $color;
   padding-top: 10px;
 }
 @mixin icon-dev {
-  font-size: 5em;
+  font-size: $icon-size;
+}
+@mixin section-btn {
+  font-size: $small;
+  color: $yellow;
+  background-color: $color;
+  padding: 2px 16px;
 }

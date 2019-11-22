@@ -32,7 +32,7 @@
     color: #424146;
     background-color: #FFEA00; }
   .section-slider p span {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 500;
     color: #FFF;
     background-color: #424146; }
@@ -113,6 +113,44 @@
   opacity: 1; }
 .card:hover .layer-two-text {
   opacity: 1; }
+
+#work .work-headline {
+  font-size: 1em;
+  color: #FFEA00;
+  background-color: #424146;
+  padding: 2px 16px;
+  position: relative; }
+  #work .work-headline:before {
+    content: "";
+    border-top: 1px solid #CACACA;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 150%;
+    width: calc(50vw - 130px); }
+  #work .work-headline:after {
+    content: "";
+    border-top: 1px solid #CACACA;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    width: calc(50vw - 130px); }
+
+#work .grid {
+  padding: 10% 0; }
+  #work .grid .grid-sizer, #work .grid .grid-item {
+    width: 20%; }
+  #work .grid .gutter-sizer {
+    width: 0; }
+  #work .grid .grid-item img {
+    width: 100%; }
+  #work .grid .grid-item--width1 {
+    width: 30%; }
+  #work .grid .grid-item--width2 {
+    width: 15%; }
+  #work .grid .grid-item--width3 {
+    width: 10%; }
 
 @media (min-width: 425px) {
   .section-slider h2 span {
