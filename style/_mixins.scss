@@ -25,14 +25,15 @@
 }
 @mixin dev-headline {
   font-size: 1em;
+  font-weight: 600;
   color: $color;
   line-height: 0.6;
 }
 @mixin dev-title {
   font-size: 1em;
   color: $color;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 @mixin icon-dev {
-  font-size: 4em;
+  font-size: 5em;
 }

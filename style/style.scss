@@ -35,6 +35,7 @@
 
 .indent {
   padding: 0;
+  margin: 0;
 }
 
 .section-slider {
@@ -64,38 +65,58 @@
 }
 
 #development {
-  padding: 5% 0 5%;
-  h2 {
+  padding: 5% 0 10%;
+  position: relative;
+  .dev-headline {
     @include dev-headline;
   }
   .dev-title {
     @include dev-title;
   }
 }
+
 .layer-one {
   width: 100%;
   height: 100%;
   background-color: $yellow;
-  padding: 50px 50px 10px;
+  padding: 10% 10% 5%;
   position: relative;
-    .icon-dev {
-      @include icon-dev;
-    }
-    .icon-title {
-      padding-top: 30px;
-    }
+
+  .icon-dev {
+    @include icon-dev;
+  }
 }
 
 .layer-two {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: 1s ease-out;
+  transition: 0.8s linear;
   opacity: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid $color;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card {
+  .layer-one h3 {
+    font-size: $small;
+  }
+  .card-body p span {
+    font-size: $smaller;
+  }
 }
 
 .card {
@@ -110,19 +131,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transition: 1s ease-out;
+    transition: 0.8s linear;
     opacity: 0;
     .card-link {
       font-size: 0.7em;
       color: $yellow;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      top: -20%;
-      right: 10%;
-      border: 10px solid transparent;
-      border-bottom: 10px solid $color;
     }
   }
 }
@@ -140,11 +153,10 @@
 @media (min-width: 425px) {
   .section-slider {
     h2 span {
-      font-size: 1.1em;
+      font-size: $small;
     }
-
     p span {
-      font-size: 1.2em;
+      font-size: $normal;
     }
   }
 }
@@ -152,11 +164,11 @@
 @media (min-width: 576px) {
   .section-slider {
     h2 span {
-      font-size: 1.5em;
+      font-size: $big;
     }
 
     p span {
-      font-size: 1.5em;
+      font-size: $big;
     }
 
     .btn {
@@ -173,18 +185,36 @@
   }
   .section-slider {
     h2 span {
-      font-size: 1em;
+      font-size: $small;
     }
 
     p span {
-      font-size: 1em;
+      font-size: $small;
     }
 
     .btn {
       margin-left: 150px;
     }
   }
+  .card {
+    .layer-one h3 {
+      font-size: $normal;
+    }
+    .card-body p span {
+      font-size: $small;
+    }
+  }
+  #development {
+    .dev-headline {
+      font-size: $big;
+    }
+    .dev-title {
+      font-size: $normal;
+    }
+  }
 }
+
+
 
 @media (max-width: 768px) {
   #header {
@@ -194,6 +224,7 @@
   }
 }
 
+
 @media (min-width: 992px) {
   .section-slider {
     .slider-headline {
@@ -201,15 +232,24 @@
     }
 
     h2 span {
-      font-size: 1.2em;
+      font-size: $normal;
     }
 
     p span {
-      font-size: 1.2em;
+      font-size: $normal;
     }
 
     .btn {
       margin-left: 150px;
+    }
+  }
+  .card {
+    .layer-one h3 {
+      font-size: $small;
+    }
+    .card-body p {
+      font-size: $smaller;
+      line-height: normal;
     }
   }
 }
@@ -221,11 +261,11 @@
     }
 
     h2 span {
-      font-size: 1.5em;
+      font-size: $big;
     }
 
     p span {
-      font-size: 1.4em;
+      font-size: $big;
     }
   }
 }
