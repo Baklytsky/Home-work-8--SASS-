@@ -2,7 +2,7 @@
 @import "variables";
 
 #header {
-  padding: 2% 0 2%;
+  padding: 2% 0;
 
   .icon-three-bars {
     color: $color;
@@ -42,7 +42,7 @@
   width: 100%;
   height: 100%;
   background: url("../img/slider.jpg") no-repeat center / cover;
-  padding: 3% 0 3%;
+  padding: 3% 0;
 
   h2 span {
     @include slider-headline;
@@ -79,7 +79,7 @@
   width: 100%;
   height: 100%;
   background-color: $yellow;
-  padding: 10% 10% 5%;
+  padding: 10% 5% 5%;
   position: relative;
 
   .icon-dev {
@@ -154,21 +154,11 @@
     @include section-btn;
     position: relative;
     &:before {
-      content: "";
-      border-top: 1px solid $line;
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 150%;
+      @include before-btn;
       width: calc(50vw - 130px);
     }
     &:after {
-      content: "";
-      border-top: 1px solid $line;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 150%;
+      @include after-btn;
       width: calc(50vw - 130px);
     }
   }
@@ -176,7 +166,7 @@
 
 #work {
   .grid {
-    padding: 10% 0;
+    padding: 5% 0 10%;
     .grid-sizer, .grid-item {
       width: 20%;
     }
@@ -198,11 +188,44 @@
   }
 }
 
+#clients {
+  .clients-headline {
+    @include section-btn;
+    position: absolute;
+    &:before {
+      @include before-btn;
+      width: calc(50vw - 140px);
+    }
+    &:after {
+      @include after-btn;
+      width: calc(50vw - 140px);
+    }
+  }
+}
 
+  .icon-custom {
+    @include slider-style;
+  }
+  #carouselExample {
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(100%);
+    }
 
-
-
-
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-100%);
+    }
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+      transform: translateX(0);
+    }
+  }
 
 
 
@@ -229,6 +252,20 @@
 
     .btn {
       width: 150px;
+    }
+  }
+  #carouselExample {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(50%);
+    }
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-50%);
+    }
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+      transform: translateX(0);
     }
   }
 }
@@ -266,6 +303,20 @@
     }
     .dev-title {
       font-size: $normal;
+    }
+  }
+  #carouselExample {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+      transform: translateX(0);
     }
   }
 }
@@ -306,6 +357,20 @@
     .card-body p {
       font-size: $smaller;
       line-height: normal;
+    }
+  }
+  #carouselExample {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(16.666667%);
+    }
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-16.666667%);
+    }
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+      transform: translateX(0);
     }
   }
 }
