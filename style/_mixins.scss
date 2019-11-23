@@ -43,3 +43,24 @@
   background-color: $color;
   padding: 2px 16px;
 }
+@mixin before-btn {
+  content: "";
+  border-top: 1px solid $line;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 150%;
+}
+@mixin after-btn {
+  content: "";
+  border-top: 1px solid $line;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+}
+@mixin slider-style {
+  width: 50px;
+  background-color: $black;
+  padding: 15% 0;
+}

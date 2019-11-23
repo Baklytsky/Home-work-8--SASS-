@@ -1,5 +1,5 @@
 #header {
-  padding: 2% 0 2%; }
+  padding: 2% 0; }
   #header .icon-three-bars {
     color: #424146;
     font-size: 2em; }
@@ -25,7 +25,7 @@
   width: 100%;
   height: 100%;
   background: url("../img/slider.jpg") no-repeat center/cover;
-  padding: 3% 0 3%; }
+  padding: 3% 0; }
   .section-slider h2 span {
     font-size: 0.7em;
     font-weight: 500;
@@ -65,7 +65,7 @@
   width: 100%;
   height: 100%;
   background-color: #FFEA00;
-  padding: 10% 10% 5%;
+  padding: 10% 5% 5%;
   position: relative; }
   .layer-one .icon-dev {
     font-size: 5em; }
@@ -138,7 +138,7 @@
     width: calc(50vw - 130px); }
 
 #work .grid {
-  padding: 10% 0; }
+  padding: 5% 0 10%; }
   #work .grid .grid-sizer, #work .grid .grid-item {
     width: 20%; }
   #work .grid .gutter-sizer {
@@ -152,6 +152,48 @@
   #work .grid .grid-item--width3 {
     width: 10%; }
 
+#clients .clients-headline {
+  font-size: 1em;
+  color: #FFEA00;
+  background-color: #424146;
+  padding: 2px 16px;
+  position: absolute; }
+  #clients .clients-headline:before {
+    content: "";
+    border-top: 1px solid #CACACA;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 150%;
+    width: calc(50vw - 140px); }
+  #clients .clients-headline:after {
+    content: "";
+    border-top: 1px solid #CACACA;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    width: calc(50vw - 140px); }
+
+.icon-custom {
+  width: 50px;
+  background-color: #000;
+  padding: 15% 0; }
+
+#carouselExample .carousel-inner .carousel-item.active,
+#carouselExample .carousel-inner .carousel-item-next,
+#carouselExample .carousel-inner .carousel-item-prev {
+  display: flex; }
+#carouselExample .carousel-inner .carousel-item-right.active,
+#carouselExample .carousel-inner .carousel-item-next {
+  transform: translateX(100%); }
+#carouselExample .carousel-inner .carousel-item-left.active,
+#carouselExample .carousel-inner .carousel-item-prev {
+  transform: translateX(-100%); }
+#carouselExample .carousel-inner .carousel-item-right,
+#carouselExample .carousel-inner .carousel-item-left {
+  transform: translateX(0); }
+
 @media (min-width: 425px) {
   .section-slider h2 span {
     font-size: 1em; }
@@ -163,7 +205,17 @@
   .section-slider p span {
     font-size: 1.5em; }
   .section-slider .btn {
-    width: 150px; } }
+    width: 150px; }
+
+  #carouselExample .carousel-inner .carousel-item-right.active,
+  #carouselExample .carousel-inner .carousel-item-next {
+    transform: translateX(50%); }
+  #carouselExample .carousel-inner .carousel-item-left.active,
+  #carouselExample .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%); }
+  #carouselExample .carousel-inner .carousel-item-right,
+  #carouselExample .carousel-inner .carousel-item-left {
+    transform: translateX(0); } }
 @media (min-width: 768px) {
   #header ul a {
     padding: 25px 9px; }
@@ -183,7 +235,17 @@
   #development .dev-headline {
     font-size: 1.5em; }
   #development .dev-title {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  #carouselExample .carousel-inner .carousel-item-right.active,
+  #carouselExample .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  #carouselExample .carousel-inner .carousel-item-left.active,
+  #carouselExample .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); }
+  #carouselExample .carousel-inner .carousel-item-right,
+  #carouselExample .carousel-inner .carousel-item-left {
+    transform: translateX(0); } }
 @media (max-width: 768px) {
   ul a {
     padding: 2px 10px; } }
@@ -201,7 +263,17 @@
     font-size: 1em; }
   .card .card-body p {
     font-size: 0.7em;
-    line-height: normal; } }
+    line-height: normal; }
+
+  #carouselExample .carousel-inner .carousel-item-right.active,
+  #carouselExample .carousel-inner .carousel-item-next {
+    transform: translateX(16.666667%); }
+  #carouselExample .carousel-inner .carousel-item-left.active,
+  #carouselExample .carousel-inner .carousel-item-prev {
+    transform: translateX(-16.666667%); }
+  #carouselExample .carousel-inner .carousel-item-right,
+  #carouselExample .carousel-inner .carousel-item-left {
+    transform: translateX(0); } }
 @media (min-width: 1200px) {
   .section-slider .slider-headline {
     padding-left: 7%; }
