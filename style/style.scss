@@ -2,6 +2,7 @@
 @import "variables";
 
 #header {
+  background-color: $cream;
   padding: 2% 0;
 
   .icon-three-bars {
@@ -232,12 +233,6 @@
   }
 #footer {
   background-color: $color;
-  .footer-headline {
-
-  }
-}
-
-#footer {
 .footer-headline {
   @include footer-headline;
   }
@@ -309,6 +304,23 @@
       position: absolute;
       right: -10px;
       top: -15px;
+    }
+  }
+  .footer-menu {
+    background-color: $black;
+    padding: 10px 0;
+    .footer-menu-title {
+      @include footer-text;
+      a {
+        color: $white;
+      }
+    }
+    .footer-nav {
+      padding: 5% 0;
+      a {
+        color: $white;
+        font-size: $smaller;
+      }
     }
   }
 }

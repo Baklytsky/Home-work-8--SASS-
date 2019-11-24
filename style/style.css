@@ -1,4 +1,5 @@
 #header {
+  background-color: #F6F6F6;
   padding: 2% 0; }
   #header .icon-three-bars {
     color: #424146;
@@ -202,86 +203,65 @@
 
 #footer {
   background-color: #424146; }
-
-#footer .footer-headline {
-  font-size: 1em;
-  font-weight: bold;
-  color: #FFF;
-  line-height: 1.7;
-  padding-bottom: 10px; }
-#footer .footer-text {
-  font-size: 0.7em;
-  color: #FFF;
-  line-height: 1.7; }
-#footer .footer-btn {
-  width: 80%;
-  color: #FFF;
-  background-color: #000;
-  border-bottom: 2px solid #FFEA00;
-  padding: 5px 10px;
-  margin-bottom: 30px; }
-#footer .photo-stream {
-  padding: 1%; }
-#footer ul .twitter-list:before {
-  content: "";
-  background-image: url("../img/twitter-con.png");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  display: block;
-  padding-right: 40px;
-  margin-top: 10px; }
-#footer ul .twitter-list .twitter-link {
-  color: #FFEA00;
-  font-weight: bold; }
-#footer ul .twitter-list .days-ago {
-  color: #FFEA00;
-  font-weight: bold;
-  font-size: 0.3em; }
-#footer .icon-style {
-  color: #FFF;
-  padding: 5px;
-  background-color: #000;
-  margin-right: 2px; }
-#footer .address-list:before {
-  content: "";
-  background-image: url("../img/adress.png");
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  display: block;
-  padding-right: 40px;
-  margin-top: 10px; }
-#footer .phone-list:before {
-  content: "";
-  background-image: url("../img/phone.png");
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  display: block;
-  padding-right: 40px;
-  margin-top: 10px; }
-#footer .mail-list:before {
-  content: "";
-  background-image: url("../img/email.png");
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  display: block;
-  padding-right: 40px;
-  margin-top: 10px; }
-#footer .mail-link {
-  color: #FFEA00;
-  font-weight: bold; }
-#footer .form-style {
-  width: 200px;
-  border: none;
-  border-bottom: 2px solid #FFEA00;
-  background-color: #424146; }
-#footer .input-content {
-  width: 235px;
-  position: relative; }
-  #footer .input-content:after {
+  #footer .footer-headline {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 1.7;
+    padding-bottom: 10px; }
+  #footer .footer-text {
+    font-size: 0.7em;
+    color: #FFF;
+    line-height: 1.7; }
+  #footer .footer-btn {
+    width: 80%;
+    color: #FFF;
+    background-color: #000;
+    border-bottom: 2px solid #FFEA00;
+    padding: 5px 10px;
+    margin-bottom: 30px; }
+  #footer .photo-stream {
+    padding: 1%; }
+  #footer ul .twitter-list:before {
+    content: "";
+    background-image: url("../img/twitter-con.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer ul .twitter-list .twitter-link {
+    color: #FFEA00;
+    font-weight: bold; }
+  #footer ul .twitter-list .days-ago {
+    color: #FFEA00;
+    font-weight: bold;
+    font-size: 0.3em; }
+  #footer .icon-style {
+    color: #FFF;
+    padding: 5px;
+    background-color: #000;
+    margin-right: 2px; }
+  #footer .address-list:before {
+    content: "";
+    background-image: url("../img/adress.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer .phone-list:before {
+    content: "";
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer .mail-list:before {
     content: "";
     background-image: url("../img/email.png");
     background-repeat: no-repeat;
@@ -289,10 +269,44 @@
     height: 30px;
     display: block;
     padding-right: 40px;
-    margin-top: 10px;
-    position: absolute;
-    right: -10px;
-    top: -15px; }
+    margin-top: 10px; }
+  #footer .mail-link {
+    color: #FFEA00;
+    font-weight: bold; }
+  #footer .form-style {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid #FFEA00;
+    background-color: #424146; }
+  #footer .input-content {
+    width: 235px;
+    position: relative; }
+    #footer .input-content:after {
+      content: "";
+      background-image: url("../img/email.png");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      display: block;
+      padding-right: 40px;
+      margin-top: 10px;
+      position: absolute;
+      right: -10px;
+      top: -15px; }
+  #footer .footer-menu {
+    background-color: #000;
+    padding: 10px 0; }
+    #footer .footer-menu .footer-menu-title {
+      font-size: 0.7em;
+      color: #FFF;
+      line-height: 1.7; }
+      #footer .footer-menu .footer-menu-title a {
+        color: #FFF; }
+    #footer .footer-menu .footer-nav {
+      padding: 5% 0; }
+      #footer .footer-menu .footer-nav a {
+        color: #FFF;
+        font-size: 0.7em; }
 
 @media (min-width: 425px) {
   .section-slider h2 span {
