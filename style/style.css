@@ -78,6 +78,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-transition: 0.8s linear;
+  -o-transition: 0.8s linear;
   transition: 0.8s linear;
   opacity: 0; }
   .layer-two:before {
@@ -105,6 +107,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-transition: 0.8s linear;
+  -o-transition: 0.8s linear;
   transition: 0.8s linear;
   opacity: 0; }
   .card .layer-two-text .card-link {
@@ -190,15 +194,23 @@
 #carouselExample .carousel-inner .carousel-item.active,
 #carouselExample .carousel-inner .carousel-item-next,
 #carouselExample .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 #carouselExample .carousel-inner .carousel-item-right.active,
 #carouselExample .carousel-inner .carousel-item-next {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
   transform: translateX(100%); }
 #carouselExample .carousel-inner .carousel-item-left.active,
 #carouselExample .carousel-inner .carousel-item-prev {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%); }
 #carouselExample .carousel-inner .carousel-item-right,
 #carouselExample .carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0); }
 
 #footer {
@@ -323,12 +335,18 @@
 
   #carouselExample .carousel-inner .carousel-item-right.active,
   #carouselExample .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
     transform: translateX(50%); }
   #carouselExample .carousel-inner .carousel-item-left.active,
   #carouselExample .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
   #carouselExample .carousel-inner .carousel-item-right,
   #carouselExample .carousel-inner .carousel-item-left {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0); } }
 @media (min-width: 768px) {
   #header ul a {
@@ -353,12 +371,18 @@
 
   #carouselExample .carousel-inner .carousel-item-right.active,
   #carouselExample .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
     transform: translateX(25%); }
   #carouselExample .carousel-inner .carousel-item-left.active,
   #carouselExample .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
     transform: translateX(-25%); }
   #carouselExample .carousel-inner .carousel-item-right,
   #carouselExample .carousel-inner .carousel-item-left {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0); }
 
   #footer .middle {
@@ -388,12 +412,18 @@
 
   #carouselExample .carousel-inner .carousel-item-right.active,
   #carouselExample .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(16.666667%);
+    -ms-transform: translateX(16.666667%);
     transform: translateX(16.666667%); }
   #carouselExample .carousel-inner .carousel-item-left.active,
   #carouselExample .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-16.666667%);
+    -ms-transform: translateX(-16.666667%);
     transform: translateX(-16.666667%); }
   #carouselExample .carousel-inner .carousel-item-right,
   #carouselExample .carousel-inner .carousel-item-left {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0); }
 
   #footer .footer-text {
