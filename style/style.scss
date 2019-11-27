@@ -12,12 +12,16 @@
 }
 
 #header {
-  .active {
+  .active-nav {
     background-color: $yellow;
   }
   ul {
     li {
-      margin-right: 10px;
+      margin: 0 10px 10px;
+
+      &:hover {
+        background-color: $yellow;
+      }
 
       a {
         @include menu-item;
@@ -42,6 +46,20 @@
   background: url("../img/slider.jpg") no-repeat center / cover;
   padding: 3% 0;
   position: relative;
+
+  .indicators-type {
+    .active {
+      border: 3px solid $color;
+      background-color: $yellow;
+    }
+
+    li {
+      width: 15px;
+      height: 15px;
+      border: 3px solid $color;
+      background-color: $color;
+    }
+  }
 
   h2 span {
     @include slider-headline;
@@ -489,7 +507,7 @@
 @media (min-width: 992px) {
   .section-slider {
     .slider-headline {
-      padding-left: 7%;
+      padding-left: 5%;
     }
 
     h2 span {
@@ -546,7 +564,7 @@
 @media (min-width: 1200px) {
   .section-slider {
     .slider-headline {
-      padding-left: 7%;
+      padding-left: 5%;
     }
 
     h2 span {

@@ -5,12 +5,12 @@
 }
 @mixin slider-headline {
   font-size: $smaller;
-  font-weight: 500;
+  font-weight: 600;
   color: $color;
   background-color: $yellow;
 }
 @mixin slider-title {
-  font-size: $smaller;
+  font-size: $small;
   font-weight: 500;
   color: $white;
   background-color: $color;

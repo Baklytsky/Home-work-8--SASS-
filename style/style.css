@@ -5,10 +5,12 @@
     color: #424146;
     font-size: 2em; }
 
-#header .active {
+#header .active-nav {
   background-color: #FFEA00; }
 #header ul li {
-  margin-right: 10px; }
+  margin: 0 10px 10px; }
+  #header ul li:hover {
+    background-color: #FFEA00; }
   #header ul li a {
     font-weight: 400;
     font-size: 1em;
@@ -27,13 +29,21 @@
   background: url("../img/slider.jpg") no-repeat center/cover;
   padding: 3% 0;
   position: relative; }
+  .section-slider .indicators-type .active {
+    border: 3px solid #424146;
+    background-color: #FFEA00; }
+  .section-slider .indicators-type li {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #424146;
+    background-color: #424146; }
   .section-slider h2 span {
     font-size: 0.7em;
-    font-weight: 500;
+    font-weight: 600;
     color: #424146;
     background-color: #FFEA00; }
   .section-slider p span {
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: 500;
     color: #FFF;
     background-color: #424146; }
@@ -414,7 +424,7 @@
     padding: 2px 10px; } }
 @media (min-width: 992px) {
   .section-slider .slider-headline {
-    padding-left: 7%; }
+    padding-left: 5%; }
   .section-slider h2 span {
     font-size: 1.2em; }
   .section-slider p span {
@@ -450,7 +460,7 @@
     line-height: 1.7; } }
 @media (min-width: 1200px) {
   .section-slider .slider-headline {
-    padding-left: 7%; }
+    padding-left: 5%; }
   .section-slider h2 span {
     font-size: 1.5em; }
   .section-slider p span {
