@@ -60,9 +60,9 @@
   left: 150%;
 }
 @mixin slider-style {
-  width: 50px;
+  width: 100%;
   background-color: $black;
-  padding: 15% 0;
+  padding: 70% 0;
 }
 @mixin footer-headline {
     font-size: $small;

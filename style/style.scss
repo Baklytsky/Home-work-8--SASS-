@@ -12,6 +12,9 @@
 }
 
 #header {
+  .active {
+    background-color: $yellow;
+  }
   ul {
     li {
       margin-right: 10px;
@@ -28,12 +31,6 @@
   }
 }
 
-#home {
-  #page1 {
-    background-color: $yellow;
-  }
-}
-
 .indent {
   padding: 0;
   margin: 0;
@@ -44,6 +41,7 @@
   height: 100%;
   background: url("../img/slider.jpg") no-repeat center / cover;
   padding: 3% 0;
+  position: relative;
 
   h2 span {
     @include slider-headline;
@@ -51,6 +49,15 @@
 
   p span {
     @include slider-title;
+  }
+  .control-type {
+    width: 5%;
+    height: 10%;
+    opacity: 1;
+    background-color: $black;
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
   }
 }
 
@@ -405,6 +412,18 @@
 
     .btn {
       margin-left: 150px;
+    }
+    .control-type {
+      width: 3%;
+      height: 20%;
+      opacity: 1;
+      background-color: $black;
+      position: absolute;
+      top: 40%;
+      overflow: hidden;
+      .size {
+        font-size: 2em;
+      }
     }
   }
   .card {
