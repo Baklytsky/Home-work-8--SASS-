@@ -76,6 +76,10 @@
     position: absolute;
     top: 40%;
     overflow: hidden;
+
+    &:hover {
+      filter: invert(0.8);
+    }
   }
 }
 
@@ -200,7 +204,7 @@
   .grid {
     padding: 5% 0 10%;
     .grid-sizer, .grid-item {
-      width: 20%;
+      width: 100%;
     }
     .gutter-sizer {
       width: 0;
@@ -208,21 +212,13 @@
     .grid-item img {
       width: 100%;
     }
-    .grid-item--width1 {
-      width: 30%;
-    }
-    .grid-item--width2{
-      width: 15%;
-    }
-    .grid-item--width3{
-      width: 10%;
-    }
   }
 }
 
 #clients {
   background-color: $cream;
   padding-bottom: 5%;
+  position: relative;
   .clients-headline {
     @include section-btn;
     position: absolute;
@@ -234,6 +230,15 @@
       @include after-btn;
       width: calc(50vw - 140px);
     }
+  }
+  .control-type-mini {
+    width: 5%;
+    height: 50%;
+    opacity: 1;
+    background-color: $black;
+    position: absolute;
+    top: 20%;
+    overflow: hidden;
   }
 }
 
@@ -267,6 +272,11 @@
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+  a {
+    &:hover {
+      filter: invert(0.8);
+    }
+  }
 }
 #footer {
   background-color: $color;
@@ -281,6 +291,9 @@
   }
   .photo-stream {
     padding: 1%;
+  }
+  .footer-center {
+    overflow: hidden;
   }
   ul .twitter-list {
     &:before {
@@ -303,7 +316,12 @@
   }
   .icon-style {
     @include icon-style;
+
+    &:hover {
+      filter: invert(0.8);
+    }
   }
+
   .address-list {
     &:before {
       content: "";
@@ -357,6 +375,9 @@
       a {
         color: $white;
         font-size: $smaller;
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }
@@ -409,6 +430,29 @@
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0);
+    }
+  }
+  #work {
+  .grid {
+    padding: 5% 0 10%;
+    .grid-sizer {
+      width: 5%;
+    }
+    .gutter-sizer {
+      width: 0;
+    }
+    .grid-item img {
+      width: 100%;
+    }
+    .grid-item--width1 {
+      width: 30%;
+    }
+    .grid-item--width2{
+      width: 20%;
+    }
+    .grid-item--width3{
+      width: 15%;
+      }
     }
   }
 }
@@ -478,6 +522,16 @@
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0);
+      }
+  }
+  #clients {
+  .control-type-mini {
+    width: 3%;
+    height: 80%;
+    top: 10%;
+    .size-mini {
+      font-size: 2em;
+      }
     }
   }
   #footer {
